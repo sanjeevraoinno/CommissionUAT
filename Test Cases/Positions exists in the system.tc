@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>To verify that Positions(name of the Position) exists in the system</description>
+   <name>Positions exists in the system</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>dae5a97a-1127-4c15-ab6a-d8ee576591dd</testCaseGuid>
+</TestCaseEntity>
