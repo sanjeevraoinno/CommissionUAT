@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>To verify that UnitType exists in the system</description>
+   <name>UnitType exists in the system</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d31e5479-4927-4b7c-bfe9-0dc8457e18dd</testCaseGuid>
+</TestCaseEntity>

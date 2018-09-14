@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>Testcode</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <lastRun>2018-09-11T16:19:31</lastRun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <testSuiteGuid>30858bf9-c103-4d92-810f-ca64773987e5</testSuiteGuid>
+   <testCaseLink>
+      <guid>2fea0599-dad9-4fb6-a1fd-5ce6c9c4f048</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Commission Login</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>7fc37127-61a5-4289-b45f-cc271a94db29</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/User Data/User Test Data</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>7fc37127-61a5-4289-b45f-cc271a94db29</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Password</value>
+         <variableId>575bb085-19e1-48fc-bce4-1cadc716e45e</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>7fc37127-61a5-4289-b45f-cc271a94db29</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Username</value>
+         <variableId>71b8cdc3-bad4-417a-90b6-bf06ba647473</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>7fc37127-61a5-4289-b45f-cc271a94db29</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Url</value>
+         <variableId>4c8713f7-dfb4-494a-9ece-d447ec2cd517</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>4f144f91-56cd-4ba7-ba37-cbad4d6d2465</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Earning Codes exist in the system</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>271e64f3-bfb9-47a1-b44d-62e24b1009c3</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/User Data/User Test Data</testDataId>
+      </testDataLink>
+   </testCaseLink>
+</TestSuiteEntity>

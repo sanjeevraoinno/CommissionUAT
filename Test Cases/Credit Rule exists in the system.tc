@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>To verify that Credit Rule(name of the Credit Rule) exists in the system</description>
+   <name>Credit Rule exists in the system</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d1673d99-1e3f-4a41-862e-01c4a7893a57</testCaseGuid>
+</TestCaseEntity>
