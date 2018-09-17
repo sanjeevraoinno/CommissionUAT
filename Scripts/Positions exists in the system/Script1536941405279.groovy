@@ -19,33 +19,61 @@ WebUI.mouseOver(findTestObject('Page_Organization Tab/div_Organization'))
 
 WebUI.delay(3)
 
-WebUI.scrollToElement(findTestObject('Page_Organization Tab/a_Positions'), 2)
+if (true) {
+	println('User is able to naviagte to Administration tab')
 
-WebUI.click(findTestObject('Page_Organization Tab/a_Positions'), FailureHandling.CONTINUE_ON_FAILURE)
+	WebUI.scrollToElement(findTestObject('Page_Organization Tab/a_Positions'), 2)
 
-WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/a_Advanced Search'))
+	WebUI.delay(4)
 
-WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/td_Field Name'))
+	WebUI.click(findTestObject('Page_Organization Tab/a_Positions'))
 
-WebUI.scrollToElement(findTestObject('Page_Organization Tab/option_Position_Name'), 9)
+	if (true) {
+		println('User Naviagted to Positions screen')
 
-WebUI.click(findTestObject('Page_Organization Tab/option_Position_Name'))
+		WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/a_Advanced Search'))
 
-WebUI.delay(3)
+		WebUI.delay(3)
 
-WebUI.focus(findTestObject('Page_Callidus Cloud Commissions Man/td_Comparision'))
+		WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/td_Field Name'))
 
-WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/td_Comparision'))
+		WebUI.delay(2)
 
-WebUI.delay(3)
+		WebUI.scrollToElement(findTestObject('Page_Organization Tab/option_Position_Name'), 9)
 
-WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/option_Equals'), 2)
+		WebUI.delay(2)
 
-WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/option_Equals'))
+		WebUI.click(findTestObject('Page_Organization Tab/option_Position_Name'))
 
-WebUI.setText(findTestObject('Page_Callidus Cloud Commissions Man/td_Value'), 'Senior Analyst')
+		WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/td_Comparision'))
 
-WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/input_Apply Search'))
+		WebUI.delay(2)
+
+		WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/option_Equals'), 2)
+
+		WebUI.delay(2)
+
+		WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/option_Equals'))
+
+		WebUI.delay(2)
+
+		WebUI.setText(findTestObject('Page_Callidus Cloud Commissions Man/td_Value'), 'Senior Analyst')
+
+		WebUI.delay(2)
+
+		WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/input_Apply Search'))
+
+		println('User search for Positions successfull, Testcase , Pass')
+	} else {
+		false
+	}
+	
+	println('Positions screen is unavailable Test case FAIL')
+} else {
+	false.call({
+			println('Administration tab is unavailable, Test case Fail')
+		})
+}
 
 WebUI.callTestCase(findTestCase('Commission Logout'), [:], FailureHandling.STOP_ON_FAILURE)
 

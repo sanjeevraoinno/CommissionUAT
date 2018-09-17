@@ -19,27 +19,61 @@ WebUI.mouseOver(findTestObject('Page_Callidus Cloud Commissions Man/div_PLAN'))
 
 WebUI.delay(5)
 
-WebUI.scrollToElement(findTestObject('Page_Plan Tab/a_Quota'), 11)
+if (true) {
+    println('User is able to naviagte to Plan tab')
 
-WebUI.click(findTestObject('Page_Plan Tab/a_Quota'), FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.scrollToElement(findTestObject('Page_Plan Tab/a_Quota'), 4)
 
-WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/a_Advanced Search'))
+    WebUI.delay(4)
 
-WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/td_Field Name'))
+    WebUI.click(findTestObject('Page_Plan Tab/a_Quota'))
 
-WebUI.scrollToElement(findTestObject('Page_Plan Tab/option_QuotaName'), 4)
+    if (true) {
+        println('User Naviagted to Quotas screen')
 
-WebUI.click(findTestObject('Page_Plan Tab/option_QuotaName'))
+        WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/a_Advanced Search'))
 
-WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/td_Comparision'))
+        WebUI.delay(3)
 
-WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/option_Equals'), 2)
+        WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/td_Field Name'))
 
-WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/option_Equals'))
+        WebUI.delay(2)
 
-WebUI.setText(findTestObject('Page_Callidus Cloud Commissions Man/td_Value'), 'Quota')
+        WebUI.scrollToElement(findTestObject('Page_Plan Tab/option_QuotaName'), 4)
 
-WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/input_Apply Search'))
+        WebUI.delay(2)
+
+        WebUI.click(findTestObject('Page_Plan Tab/option_QuotaName'))
+
+        WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/td_Comparision'))
+
+        WebUI.delay(2)
+
+        WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/option_Equals'), 2)
+
+        WebUI.delay(2)
+
+        WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/option_Equals'))
+
+        WebUI.delay(2)
+
+        WebUI.setText(findTestObject('Page_Callidus Cloud Commissions Man/td_Value'), 'Quota')
+
+        WebUI.delay(2)
+
+        WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/input_Apply Search'))
+
+        println('User search for Quotas successfull, Testcase , Pass')
+    } else {
+        false
+    }
+    
+    println('Quotas screen is unavailable Test case FAIL')
+} else {
+    false.call({ 
+            println('Plan tab is unavailable, Test case Fail')
+        })
+}
 
 WebUI.callTestCase(findTestCase('Commission Logout'), [:], FailureHandling.STOP_ON_FAILURE)
 

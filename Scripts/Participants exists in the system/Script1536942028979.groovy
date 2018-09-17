@@ -18,34 +18,61 @@ WebUI.callTestCase(findTestCase('Commission Login'), [:], FailureHandling.STOP_O
 WebUI.mouseOver(findTestObject('Page_Organization Tab/div_Organization'))
 
 WebUI.delay(5)
+if (true) {
+	println('User is able to naviagte to Administration tab')
 
-WebUI.scrollToElement(findTestObject('Page_Organization Tab/a_Participants'), 1)
+	WebUI.scrollToElement(findTestObject('Page_Organization Tab/a_Participants'), 1)
 
-WebUI.click(findTestObject('Page_Organization Tab/a_Participants'), FailureHandling.CONTINUE_ON_FAILURE)
+	WebUI.delay(4)
 
-WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/a_Advanced Search'))
+	WebUI.click(findTestObject('Page_Organization Tab/a_Participants'))
 
-WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/td_Field Name'))
+	if (true) {
+		println('User Naviagted to Participants screen')
 
-WebUI.scrollToElement(findTestObject('Page_Organization Tab/Option_Participant_id'), 9)
+		WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/a_Advanced Search'))
 
-WebUI.click(findTestObject('Page_Organization Tab/Option_Participant_id'))
+		WebUI.delay(3)
 
-WebUI.delay(3)
+		WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/td_Field Name'))
 
-WebUI.focus(findTestObject('Page_Callidus Cloud Commissions Man/td_Comparision'))
+		WebUI.delay(2)
 
-WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/td_Comparision'))
+		WebUI.scrollToElement(findTestObject('Page_Organization Tab/Option_Participant_id'), 9)
 
-WebUI.delay(3)
+		WebUI.delay(2)
 
-WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/option_Equals'), 2)
+		WebUI.click(findTestObject('Page_Organization Tab/Option_Participant_id'))
 
-WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/option_Equals'))
+		WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/td_Comparision'))
 
-WebUI.setText(findTestObject('Page_Callidus Cloud Commissions Man/td_Value'), '546')
+		WebUI.delay(2)
 
-WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/input_Apply Search'))
+		WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/option_Equals'), 2)
+
+		WebUI.delay(2)
+
+		WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/option_Equals'))
+
+		WebUI.delay(2)
+
+		WebUI.setText(findTestObject('Page_Callidus Cloud Commissions Man/td_Value'), '546')
+
+		WebUI.delay(2)
+
+		WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/input_Apply Search'))
+
+		println('User search for Participants successfull, Testcase , Pass')
+	} else {
+		false
+	}
+	
+	println('Participants screen is unavailable Test case FAIL')
+} else {
+	false.call({
+			println('Administration tab is unavailable, Test case Fail')
+		})
+}
 
 WebUI.callTestCase(findTestCase('Commission Logout'), [:], FailureHandling.STOP_ON_FAILURE)
 
