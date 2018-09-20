@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>To verify that Credit Rule(name of the Credit Rule) exists in the system</description>
-   <name>Credit Rule exists in the system - Testing - Correct String</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>cc9274ed-85fd-48a7-a08f-ba5443eb8234</testCaseGuid>
-</TestCaseEntity>
