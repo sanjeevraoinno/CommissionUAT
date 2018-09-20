@@ -18,6 +18,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 
 WebUI.openBrowser('')
 
@@ -27,6 +28,8 @@ WebUI.maximizeWindow()
 
 WebUI.setText(findTestObject('Page_Sales Performance Home/input_username'), Username)
 
+WebUI.delay(2)
+
 WebUI.setText(findTestObject('Page_Sales Performance Home/input_password'), Password)
 
 WebUI.click(findTestObject('Page_Sales Performance Home/button_Login'))
@@ -34,6 +37,10 @@ WebUI.click(findTestObject('Page_Sales Performance Home/button_Login'))
 WebUI.click(findTestObject('Page_Sales Performance Home/span_Sales Performance Home'))
 
 WebUI.click(findTestObject('Page_Sales Performance Home/a_Commissions'))
+
+WebUI.waitForPageLoad(100)
+
+WebUI.waitForElementClickable(findTestObject('Page_Callidus Cloud Commissions Man/a_Manage Setup'), 100)
 
 WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/a_Manage Setup'))
 

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>search</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <lastRun>2018-09-20T15:45:07</lastRun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <testSuiteGuid>a90bca6d-9c62-48d2-b0f4-eb6ebc321e59</testSuiteGuid>
+   <testCaseLink>
+      <guid>0246e833-5913-4053-990a-7a3ecc2709d5</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Commission Login</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>575bb085-19e1-48fc-bce4-1cadc716e45e</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>71b8cdc3-bad4-417a-90b6-bf06ba647473</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>4c8713f7-dfb4-494a-9ece-d447ec2cd517</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>3aaafce7-ee32-4070-9df7-b31dc0c72d09</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Credit Rule exists in the system - Modified</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>495ddd5c-192c-4bc1-af12-7b8fa28730b9</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>

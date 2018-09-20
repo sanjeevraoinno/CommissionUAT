@@ -1,0 +1,8 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+nrecord not found and make it fail,Chrome 69.0.3497.100,,2018-09-20 15:58:15,2018-09-20 15:59:27,1m - 12.001s,FAILED
+,,,,,,
+Test Cases/Credit Rule exists in the system - Testing,Chrome 69.0.3497.100,To verify that Credit Rule(name of the Credit Rule) exists in the system,2018-09-20 15:58:16,2018-09-20 15:59:25,1m - 9.263s,FAILED
+Start listener action : sampleBeforeTestCase,Chrome 69.0.3497.100,,2018-09-20 15:58:16,2018-09-20 15:58:16,0.058s,PASSED
+callTestCase,Chrome 69.0.3497.100,,2018-09-20 15:58:17,2018-09-20 15:58:17,0.003s,NOT_RUN
+callTestCase,Chrome 69.0.3497.100,,2018-09-20 15:58:17,2018-09-20 15:58:17,0.003s,NOT_RUN
+callTestCase,Chrome 69.0.3497.100,,2018-09-20 15:58:17,2018-09-20 15:59:25,1m - 8.742s,FAILED

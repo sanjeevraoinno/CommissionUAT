@@ -6,21 +6,21 @@
    <comment></comment>
    <testCaseGuid>ea96b448-7ddc-4f70-a335-c00fe184b5d3</testCaseGuid>
    <variable>
-      <defaultValue>'Kiran09@@'</defaultValue>
+      <defaultValue>'PortalAdmin'</defaultValue>
       <description></description>
       <id>575bb085-19e1-48fc-bce4-1cadc716e45e</id>
       <masked>false</masked>
       <name>Password</name>
    </variable>
    <variable>
-      <defaultValue>'kikosana@calliduscloud.com'</defaultValue>
+      <defaultValue>'PortalAdmin'</defaultValue>
       <description></description>
       <id>71b8cdc3-bad4-417a-90b6-bf06ba647473</id>
       <masked>false</masked>
       <name>Username</name>
    </variable>
    <variable>
-      <defaultValue>'https://biz3-tst.callidusondemand.com/SalesPortal/#!/'</defaultValue>
+      <defaultValue>'https://ca1-lvcomapp-int6.callidussoftware.com:444/SalesPortal/#!/'</defaultValue>
       <description></description>
       <id>4c8713f7-dfb4-494a-9ece-d447ec2cd517</id>
       <masked>false</masked>
