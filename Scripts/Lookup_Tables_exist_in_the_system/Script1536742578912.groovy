@@ -55,7 +55,7 @@ WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/option_Equals'))
 
 WebUI.delay(2)
 
-WebUI.setText(findTestObject('Page_Callidus Cloud Commissions Man/td_Value'), 'LTD')
+WebUI.setText(findTestObject('Page_Callidus Cloud Commissions Man/td_Value'), 'test2')
 
 WebUI.delay(2)
 

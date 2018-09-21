@@ -5,4 +5,11 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>f37675d2-4ed8-4e18-a8dd-ae85e51b7cdd</testCaseGuid>
+   <variable>
+      <defaultValue>'TerritoryDR'</defaultValue>
+      <description></description>
+      <id>2dda6332-74ce-4380-a2aa-9e0bfa2fa6a3</id>
+      <masked>false</masked>
+      <name>RuleName</name>
+   </variable>
 </TestCaseEntity>
