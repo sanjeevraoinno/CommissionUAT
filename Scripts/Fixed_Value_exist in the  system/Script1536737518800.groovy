@@ -20,51 +20,51 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 
-WebUI.callTestCase(findTestCase('Commission Login'), [:], FailureHandling.STOP_ON_FAILURE)
+not_run: WebUI.callTestCase(findTestCase('Commission Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.mouseOver(findTestObject('Page_Callidus Cloud Commissions Man/div_PLAN'))
 
-WebUI.delay(2)
+not_run: WebUI.delay(2)
 
-println('User is able to naviagte to Plan tab')
+not_run: println('User is able to naviagte to Plan tab')
 
 WebUI.scrollToElement(findTestObject('Page_Plan Tab/a_Fixed Value'), 1)
 
-WebUI.delay(4)
+not_run: WebUI.delay(4)
 
 WebUI.click(findTestObject('Page_Plan Tab/a_Fixed Value'))
 
-println('User Naviagted to Fixed Values screen')
+not_run: println('User Naviagted to Fixed Values screen')
 
 WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/a_Advanced Search'))
 
-WebUI.delay(3)
+not_run: WebUI.delay(3)
 
 WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/td_Field Name'))
 
-WebUI.delay(2)
+not_run: WebUI.delay(2)
 
 WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/option_Compensations Elements'), 4)
 
-WebUI.delay(2)
+not_run: WebUI.delay(2)
 
 WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/option_Compensations Elements'))
 
 WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/td_Comparision'))
 
-WebUI.delay(2)
+not_run: WebUI.delay(2)
 
 WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/option_Equals'), 2)
 
-WebUI.delay(2)
+not_run: WebUI.delay(2)
 
 WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/option_Equals'))
 
-WebUI.delay(2)
+not_run: WebUI.delay(2)
 
 WebUI.setText(findTestObject('Page_Callidus Cloud Commissions Man/td_Value'), FIX_VAL)
 
-WebUI.delay(2)
+not_run: WebUI.delay(2)
 
 WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/input_Apply Search'))
 

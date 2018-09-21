@@ -23,51 +23,51 @@ import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as Cucumber
 
 WebUI.callTestCase(findTestCase('Commission Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.delay(6)
+not_run: WebUI.delay(6)
 
 WebUI.mouseOver(findTestObject('Page_Callidus Cloud Commissions Man/div_ADMINISTRATION'))
 
-WebUI.delay(3)
+not_run: WebUI.delay(3)
 
-println('User is able to naviagte to Administration tab')
+not_run: println('User is able to naviagte to Administration tab')
 
 WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/a_Fixed Value Types'), 6)
 
-WebUI.delay(4)
+not_run: WebUI.delay(4)
 
 WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/a_Fixed Value Types'))
 
-println('User Naviagted to Fixed Value types screen')
+not_run: println('User Naviagted to Fixed Value types screen')
 
 WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/a_Advanced Search'))
 
-WebUI.delay(3)
+not_run: WebUI.delay(3)
 
 WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/td_Field Name'))
 
-WebUI.delay(2)
+not_run: WebUI.delay(2)
 
 WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/option_Fixed Value Type id'), 3)
 
-WebUI.delay(2)
+not_run: WebUI.delay(2)
 
 WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/option_Fixed Value Type id'))
 
 WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/td_Comparision'))
 
-WebUI.delay(2)
+not_run: WebUI.delay(2)
 
 WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/option_Equals'), 2)
 
-WebUI.delay(2)
+not_run: WebUI.delay(2)
 
 WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/option_Equals'))
 
-WebUI.delay(2)
+not_run: WebUI.delay(2)
 
 WebUI.setText(findTestObject('Page_Callidus Cloud Commissions Man/td_Value'), FV_Type)
 
-WebUI.delay(2)
+not_run: WebUI.delay(2)
 
 WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/input_Apply Search'))
 

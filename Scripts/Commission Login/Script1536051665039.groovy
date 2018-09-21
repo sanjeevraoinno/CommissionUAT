@@ -28,7 +28,7 @@ WebUI.maximizeWindow()
 
 WebUI.setText(findTestObject('Page_Sales Performance Home/input_username'), Username)
 
-WebUI.delay(2)
+not_run: WebUI.delay(2)
 
 WebUI.setText(findTestObject('Page_Sales Performance Home/input_password'), Password)
 
