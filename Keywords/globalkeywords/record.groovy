@@ -39,8 +39,6 @@ public class record {
 
 				logger.logInfo('Record Not found')
 			}
-
-			
 		}
 		catch (Exception e) {
 		}
