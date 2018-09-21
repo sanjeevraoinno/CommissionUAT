@@ -19,61 +19,51 @@ WebUI.mouseOver(findTestObject('Page_Callidus Cloud Commissions Man/div_PLAN'))
 
 WebUI.delay(2)
 
-if (true) {
-    println('User is able to naviagte to Plan tab')
+println('User is able to naviagte to Plan tab')
 
-    WebUI.scrollToElement(findTestObject('Page_Plan Tab/a_Lookup Tables'), 3)
+WebUI.scrollToElement(findTestObject('Page_Plan Tab/a_Lookup Tables'), 3)
 
-    WebUI.delay(4)
+WebUI.delay(4)
 
-    WebUI.click(findTestObject('Page_Plan Tab/a_Lookup Tables'))
+WebUI.click(findTestObject('Page_Plan Tab/a_Lookup Tables'))
 
-    if (true) {
-        println('User Naviagted to Lookup Tables screen')
+println('User Naviagted to Lookup Tables screen')
 
-        WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/a_Advanced Search'))
+WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/a_Advanced Search'))
 
-        WebUI.delay(3)
+WebUI.delay(3)
 
-        WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/td_Field Name'))
+WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/td_Field Name'))
 
-        WebUI.delay(2)
+WebUI.delay(2)
 
-        WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/option_Compensations Elements'), 4)
+WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/option_Compensations Elements'), 4)
 
-        WebUI.delay(2)
+WebUI.delay(2)
 
-        WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/option_Compensations Elements'))
+WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/option_Compensations Elements'))
 
-        WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/td_Comparision'))
+WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/td_Comparision'))
 
-        WebUI.delay(2)
+WebUI.delay(2)
 
-        WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/option_Equals'), 2)
+WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/option_Equals'), 2)
 
-        WebUI.delay(2)
+WebUI.delay(2)
 
-        WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/option_Equals'))
+WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/option_Equals'))
 
-        WebUI.delay(2)
+WebUI.delay(2)
 
-        WebUI.setText(findTestObject('Page_Callidus Cloud Commissions Man/td_Value'), 'LTD')
+WebUI.setText(findTestObject('Page_Callidus Cloud Commissions Man/td_Value'), 'LTD')
 
-        WebUI.delay(2)
+WebUI.delay(2)
 
-        WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/input_Apply Search'))
+WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/input_Apply Search'))
 
-        println('User search for Lookup Tables successfull, Testcase , Pass')
-    } else {
-        false
-    }
-    
-    println('Lookup Tables screen is unavailable Test case FAIL')
-} else {
-    false.call({ 
-            println('Plan tab is unavailable, Test case Fail')
-        })
-}
+println('User search for Lookup Tables successfull, Testcase , Pass')
+
+CustomKeywords.'globalkeywords.record.RecordNotFound'()
 
 WebUI.callTestCase(findTestCase('Commission Logout'), [:], FailureHandling.STOP_ON_FAILURE)
 
