@@ -20,20 +20,20 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 
-not_run: WebUI.callTestCase(findTestCase('Commission Login'), [('Password') : 'PortalAdmin', ('Username') : 'PortalAdmin'
-        , ('Url') : 'https://ca1-lvcomapp-int6.callidussoftware.com:444/SalesPortal/#!/'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Commission Login'), [('Password') : 'PortalAdmin', ('Username') : 'PortalAdmin', ('Url') : 'https://ca1-lvcomapp-int6.callidussoftware.com:444/SalesPortal/#!/'], 
+    FailureHandling.STOP_ON_FAILURE)
 
-not_run: WebUI.delay(5)
+WebUI.delay(5)
 
 WebUI.mouseOver(findTestObject('Page_Plan Tab/a_Plan'))
 
-not_run: WebUI.delay(3)
+WebUI.delay(3)
 
 println('User is able to naviagte to Plan tab')
 
 WebUI.scrollToElement(findTestObject('Page_Plan Tab/a_Rules'), 4)
 
-not_run: WebUI.delay(4)
+WebUI.delay(4)
 
 WebUI.click(findTestObject('Page_Plan Tab/a_Rules'))
 
@@ -41,37 +41,37 @@ println('User Naviagted to Rules screen')
 
 WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/a_Advanced Search'))
 
-not_run: WebUI.delay(3)
+WebUI.delay(3)
 
 WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/td_Field Name'))
 
-not_run: WebUI.delay(2)
+WebUI.delay(2)
 
 WebUI.scrollToElement(findTestObject('Page_Plan Tab/a_Field_name'), 4)
 
-not_run: WebUI.delay(2)
+WebUI.delay(2)
 
 WebUI.click(findTestObject('Page_Plan Tab/a_Field_name'))
 
 WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/td_Comparision'))
 
-not_run: WebUI.delay(2)
+WebUI.delay(2)
 
 WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/option_Equals'), 2)
 
-not_run: WebUI.delay(2)
+WebUI.delay(2)
 
 WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/option_Equals'))
 
-not_run: WebUI.delay(2)
+WebUI.delay(2)
 
 WebUI.setText(findTestObject('Page_Callidus Cloud Commissions Man/td_Value'), RuleName)
 
-not_run: WebUI.delay(2)
+WebUI.delay(2)
 
 WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/input_Apply Search'))
 
-println('User search for credit rule successfull, Testcase , Pass')
+
 
 CustomKeywords.'globalkeywords.record.RecordNotFound'()
 
