@@ -39,25 +39,9 @@ WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/option
 
 WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/option_Equals'))
 
-WebUI.setText(findTestObject('Page_Callidus Cloud Commissions Man/td_Value'), search)
+WebUI.setText(findTestObject('Page_Callidus Cloud Commissions Man/td_Value'), Formulas)
 
 WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/input_Apply Search'))
 
-try {
-    boolean norecord = WebUI.waitForElementPresent(findTestObject('Page_Callidus Cloud Commissions Man/NoRecordsFound'), 
-        10)
-
-    if (norecord) {
-        'The Record you are searching Not Found.  Test-Case Failed'
-        KeywordUtil.markFailed('Record Not found')
-
-        KeywordLogger logger = new KeywordLogger()
-
-        logger.logInfo('Record Not found')
-    }
-}
-catch (Exception e) {
-} 
-
-WebUI.callTestCase(findTestCase('Commission Logout'), [:], FailureHandling.STOP_ON_FAILURE)
+CustomKeywords.'globalkeywords.record.RecordNotFound'()
 

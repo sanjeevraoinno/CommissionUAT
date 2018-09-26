@@ -61,9 +61,7 @@ WebUI.delay(2)
 
 WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/input_Apply Search'))
 
-println('User search for Lookup Tables successfull, Testcase , Pass')
-
 CustomKeywords.'globalkeywords.record.RecordNotFound'()
 
-WebUI.callTestCase(findTestCase('Commission Logout'), [:], FailureHandling.STOP_ON_FAILURE)
+//WebUI.callTestCase(findTestCase('Commission Logout'), [:], FailureHandling.STOP_ON_FAILURE)
 
