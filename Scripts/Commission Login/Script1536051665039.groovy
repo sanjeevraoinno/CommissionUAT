@@ -34,7 +34,7 @@ WebUI.setText(findTestObject('Page_Sales Performance Home/input_password'), Pass
 
 WebUI.click(findTestObject('Page_Sales Performance Home/button_Login'))
 
-WebUI.click(findTestObject('Page_Sales Performance Home/span_Sales Performance Home'))
+WebUI.click(findTestObject('Page_Sales Performance Home/span_Administration_sap-icon'))
 
 WebUI.click(findTestObject('Page_Sales Performance Home/a_Commissions'))
 

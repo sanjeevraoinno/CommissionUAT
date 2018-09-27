@@ -18,6 +18,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 
 WebUI.callTestCase(findTestCase('Commission Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -25,60 +26,47 @@ WebUI.mouseOver(findTestObject('Page_Callidus Cloud Commissions Man/div_ADMINIST
 
 WebUI.delay(2)
 
-if (true) {
-    println('User is able to naviagte to Administration tab')
+println('User is able to naviagte to Administration tab')
 
-    WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/a_Position Groups'), 7)
+WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/a_Position Groups'), 7)
 
-    WebUI.delay(4)
+WebUI.delay(4)
 
-    WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/a_Position Groups'))
+WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/a_Position Groups'))
 
-    if (true) {
-        println('User Naviagted to Position Groups screen')
+println('User Naviagted to Position Groups screen')
 
-        WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/a_Advanced Search'))
+WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/a_Advanced Search'))
 
-        WebUI.delay(3)
+WebUI.delay(3)
 
-        WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/td_Field Name'))
+WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/td_Field Name'))
 
-        WebUI.delay(2)
+WebUI.delay(2)
 
-        WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/option_Position Groups'), 3)
+WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/option_Position Groups'), 3)
 
-        WebUI.delay(2)
+WebUI.delay(2)
 
-        WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/option_Position Groups'))
+WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/option_Position Groups'))
 
-        WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/td_Comparision'))
+WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/td_Comparision'))
 
-        WebUI.delay(2)
+WebUI.delay(2)
 
-        WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/option_Equals'), 2)
+WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/option_Equals'), 2)
 
-        WebUI.delay(2)
+WebUI.delay(2)
 
-        WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/option_Equals'))
+WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/option_Equals'))
 
-        WebUI.delay(2)
+WebUI.delay(2)
 
-        WebUI.setText(findTestObject('Page_Callidus Cloud Commissions Man/td_Value'), 'Test PG')
+WebUI.setText(findTestObject('Page_Callidus Cloud Commissions Man/td_Value'), Pos_Grp)
 
-        WebUI.delay(2)
+WebUI.delay(2)
 
-        WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/input_Apply Search'))
+WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/input_Apply Search'))
 
-        println('User search for Position Groups successfull, Testcase , Pass')
-    } else {
-        false
-    }
-    
-    println('Position Groups screen is unavailable Test case FAIL')
-} else {
-    false.call({ 
-            println('Administration tab is unavailable, Test case Fail')
-        })
-}
-WebUI.callTestCase(findTestCase('Commission Logout'), [:], FailureHandling.STOP_ON_FAILURE)
+CustomKeywords.'globalkeywords.record.RecordNotFound'()
 
