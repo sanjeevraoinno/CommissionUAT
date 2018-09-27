@@ -6,14 +6,14 @@
    <comment></comment>
    <testCaseGuid>ea96b448-7ddc-4f70-a335-c00fe184b5d3</testCaseGuid>
    <variable>
-      <defaultValue>'Augg@1234'</defaultValue>
+      <defaultValue>'Vinayaka@1254'</defaultValue>
       <description></description>
       <id>575bb085-19e1-48fc-bce4-1cadc716e45e</id>
       <masked>false</masked>
       <name>Password</name>
    </variable>
    <variable>
-      <defaultValue>'rkulkarn@calliduscloud.com'</defaultValue>
+      <defaultValue>'skadhulu@calliduscloud.com'</defaultValue>
       <description></description>
       <id>71b8cdc3-bad4-417a-90b6-bf06ba647473</id>
       <masked>false</masked>

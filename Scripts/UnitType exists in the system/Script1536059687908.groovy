@@ -18,68 +18,58 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 
-WebUI.callTestCase(findTestCase('Commission Login'), [:], FailureHandling.STOP_ON_FAILURE)
+not_run: WebUI.callTestCase(findTestCase('Commission Login'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Commission Login - Copy'), [('Url') : 'https://ca1-lvcomapp-int6.callidussoftware.com:444/SalesPortal/#!/'
+        , ('Username') : 'PortalAdmin', ('Password') : 'PortalAdmin'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.mouseOver(findTestObject('Page_Callidus Cloud Commissions Man/div_ADMINISTRATION'))
 
 WebUI.delay(3)
 
-if (true) {
-    println('User is able to naviagte to Administration tab')
+println('User is able to naviagte to Administration tab')
 
-    WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/a_Unit Types'), 9)
+WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/a_Unit Types'), 9)
 
-    WebUI.delay(4)
+WebUI.delay(4)
 
-    WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/a_Unit Types'))
+WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/a_Unit Types'))
 
-    if (true) {
-        println('User Naviagted to Unit Types screen')
+println('User Naviagted to Unit Types screen')
 
-        WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/a_Advanced Search'))
+WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/a_Advanced Search'))
 
-        WebUI.delay(3)
+WebUI.delay(3)
 
-        WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/td_Field Name'))
+WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/td_Field Name'))
 
-        WebUI.delay(2)
+WebUI.delay(2)
 
-        WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/option_Unit Type name'), 4)
+WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/option_Unit Type name'), 4)
 
-        WebUI.delay(2)
+WebUI.delay(2)
 
-        WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/option_Unit Type name'))
-		
+WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/option_Unit Type name'))
 
-        WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/td_Comparision'))
+WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/td_Comparision'))
 
-        WebUI.delay(2)
+WebUI.delay(2)
 
-        WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/option_Equals'), 2)
+WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/option_Equals'), 2)
 
-        WebUI.delay(2)
+WebUI.delay(2)
 
-        WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/option_Equals'))
+WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/option_Equals'))
 
-        WebUI.delay(2)
+WebUI.delay(2)
 
-        WebUI.setText(findTestObject('Page_Callidus Cloud Commissions Man/td_Value'), 'Quantity')
+WebUI.setText(findTestObject('Page_Callidus Cloud Commissions Man/td_Value'), UnitType)
 
-        WebUI.delay(2)
+WebUI.delay(2)
 
-        WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/input_Apply Search'))
+WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/input_Apply Search'))
 
-        println('User search for Unit Types successfull, Testcase , Pass')
-    } else {
-        false
-    }
-    
-    println('Unit Types Position Groups screen is unavailable Test case FAIL')
-} else {
-    false.call({ 
-            println('Administration tab is unavailable, Test case Fail')
-        })
-}
-WebUI.callTestCase(findTestCase('Commission Logout'), [:], FailureHandling.STOP_ON_FAILURE)
+CustomKeywords.'globalkeywords.record.RecordNotFound'()
 
