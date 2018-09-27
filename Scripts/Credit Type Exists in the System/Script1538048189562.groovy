@@ -20,31 +20,21 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 
-not_run: WebUI.callTestCase(findTestCase('Commission Login'), [('Password') : '', ('Username') : '', ('Url') : ''], FailureHandling.STOP_ON_FAILURE)
-
-not_run: WebUI.callTestCase(findTestCase('Commission Login'), [('Password') : 'Kiran09@@', ('Username') : 'kikosana@calliduscloud.com'
-        , ('Url') : 'https://biz3-tst.callidusondemand.com/SalesPortal/#!/'], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.callTestCase(findTestCase('Commission Login - Copy'), [('Url') : 'https://ca1-lvcomapp-int6.callidussoftware.com:444/SalesPortal/#!/'
-        , ('Username') : 'PortalAdmin', ('Password') : 'PortalAdmin'], FailureHandling.STOP_ON_FAILURE)
-
-not_run: WebUI.callTestCase(findTestCase('Commission Login'), [:], FailureHandling.STOP_ON_FAILURE)
-
-not_run: WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/Manage Set up_Link'))
+WebUI.callTestCase(findTestCase('Commission Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.mouseOver(findTestObject('Page_Callidus Cloud Commissions Man/div_ADMINISTRATION'))
 
-WebUI.delay(2)
+WebUI.delay(5)
 
 println('User is able to naviagte to Administration tab')
 
-WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/a_Reason Codes'), 8)
+WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/a_Credit Types'), 2)
 
 WebUI.delay(4)
 
-WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/a_Reason Codes'))
+WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/a_Credit Types'))
 
-println('User Naviagted to Reason Codes screen')
+println('User Naviagted to Credit Types screen')
 
 WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/a_Advanced Search'))
 
@@ -54,11 +44,11 @@ WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/td_Field Name'))
 
 WebUI.delay(2)
 
-WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/option_Reason Code id'), 3)
+WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/option_credit types id'), 2)
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/option_Reason Code id'))
+WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/option_credit types id'))
 
 WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/td_Comparision'))
 
@@ -72,7 +62,7 @@ WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/option_Equals'))
 
 WebUI.delay(2)
 
-WebUI.setText(findTestObject('Page_Callidus Cloud Commissions Man/td_Value'), Reason_codes)
+WebUI.setText(findTestObject('Page_Callidus Cloud Commissions Man/td_Value'), Credit_Types)
 
 WebUI.delay(2)
 

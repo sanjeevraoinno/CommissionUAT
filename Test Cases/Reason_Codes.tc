@@ -5,4 +5,11 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>56a96fdf-e731-421e-bd0f-bebecb9e6843</testCaseGuid>
+   <variable>
+      <defaultValue>'TestCode'</defaultValue>
+      <description></description>
+      <id>fb70221e-aa1a-42f9-9ea6-f620cb7b521d</id>
+      <masked>false</masked>
+      <name>Reason_codes</name>
+   </variable>
 </TestCaseEntity>
