@@ -4,5 +4,12 @@
    <name>Plans exist in the system</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>99369fec-b29f-49a5-b2f6-453c5082f42e</testCaseGuid>
+   <testCaseGuid>e26a058b-0ce2-4e35-832e-a375441547c5</testCaseGuid>
+   <variable>
+      <defaultValue>'Auto_Plana872916'</defaultValue>
+      <description></description>
+      <id>cbf06720-c531-49ff-af01-8602cad7bd6a</id>
+      <masked>false</masked>
+      <name>PlanName</name>
+   </variable>
 </TestCaseEntity>
