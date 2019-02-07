@@ -42,5 +42,5 @@ WebUI.waitForPageLoad(100)
 
 WebUI.waitForElementClickable(findTestObject('Page_Callidus Cloud Commissions Man/a_Manage Setup'), 100)
 
-WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/a_Manage Setup'))
+//WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/a_Manage Setup'))
 
